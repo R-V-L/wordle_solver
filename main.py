@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup as bs
 import requests
 from unicodedata import normalize
 
+# https://wordle.wekele.com/?
 
 response = requests.get('https://raw.githubusercontent.com/mazyvan/most-common-spanish-words/master/most-common-spanish-words-v4.txt')
 data = response.text.split('\n')
